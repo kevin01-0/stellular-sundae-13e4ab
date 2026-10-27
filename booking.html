@@ -1,0 +1,196 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse Luxe Beauty Studio inspiration and send your booking details via WhatsApp.">
+  <title>Gallery & Booking | Luxe Beauty Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement">YOUR BEAUTY. YOUR MOMENT. YOUR RULES.</div>
+
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="Luxe Beauty Studio home">
+      <span class="logo-symbol">L<span>✳</span></span>
+      <span class="logo-type">LUXE <small>BEAUTY STUDIO</small></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="booking.html">Gallery & Booking</a>
+    </nav>
+
+    <a class="nav-cta" href="#booking">Book now <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="page-hero booking-page-hero">
+      <p class="eyebrow">THE BEAUTY JOURNAL</p>
+      <h1>Save the date.<br><em>Bring the glow.</em></h1>
+      <p>Browse the inspiration, then tell us about your special day. Your details will be added to a WhatsApp message for the studio.</p>
+      <div class="page-hero-deco">L<span>✳</span></div>
+    </section>
+
+    <section class="gallery-grid" aria-label="Beauty inspiration gallery">
+      <figure class="gallery-tall">
+        <img src="assets/images/facial-skin-prep.png" alt="Soft beauty portrait">
+        <figcaption>Soft & timeless</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/images/bridal-makeup.png" alt="Elegant portrait inspiration">
+        <figcaption>Made for your moment</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/images/reception-glam.png" alt="Modern glam inspiration">
+        <figcaption>Modern glam</figcaption>
+      </figure>
+    </section>
+
+    <section class="booking-layout" id="booking">
+      <div class="booking-side">
+        <p class="eyebrow">LET'S GET YOU READY</p>
+        <h2>Tell us about<br><em>your big moment.</em></h2>
+        <p class="booking-lead">
+          Complete the details, tap “Send booking enquiry” and WhatsApp
+          will open with a message ready to send. You can review it
+          before sending.
+        </p>
+      </div>
+
+      <form id="booking-form" class="booking-form">
+        <div class="form-title">
+          <span class="form-kicker">APPOINTMENT ENQUIRY / 01</span>
+          <h3>Your booking details</h3>
+          <p>Fields marked with * are required.</p>
+        </div>
+
+        <div class="fields">
+          <div class="field">
+            <label for="customer-name">Your full name *</label>
+            <input id="customer-name" name="name" autocomplete="name" placeholder="e.g. Priya Kumar" required>
+          </div>
+
+          <div class="field">
+            <label for="customer-phone">Contact number *</label>
+            <input id="customer-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 ..." required>
+          </div>
+
+          <div class="field">
+            <label for="service">Service type *</label>
+            <select id="service" name="service" required>
+              <option value="">Choose your service</option>
+              <option>Bridal Makeup</option>
+              <option>Reception Makeup</option>
+              <option>Party Makeup</option>
+              <option>Hair Styling</option>
+              <option>Saree Draping</option>
+              <option>Facial & Skin Prep</option>
+              <option>Bridal Package (Makeup + Hair + Draping)</option>
+              <option>Not sure yet — please advise</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="event-date">Event date *</label>
+            <input id="event-date" name="date" type="date" required>
+          </div>
+
+          <div class="field">
+            <label for="event-time">Preferred time *</label>
+            <select id="event-time" name="time" required>
+              <option value="">Choose a time</option>
+              <option>Early morning (5 AM–8 AM)</option>
+              <option>Morning (8 AM–11 AM)</option>
+              <option>Afternoon (11 AM–3 PM)</option>
+              <option>Evening (3 PM–7 PM)</option>
+              <option>Flexible / discuss with me</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="people">Number of people *</label>
+            <select id="people" name="people" required>
+              <option value="">Choose count</option>
+              <option>1 person</option>
+              <option>2 people</option>
+              <option>3 people</option>
+              <option>4 people</option>
+              <option>5+ people</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="location">Event location / venue *</label>
+            <input id="location" name="location" placeholder="Area, city or venue" required>
+          </div>
+
+          <div class="field">
+            <label for="budget">Approximate budget</label>
+            <select id="budget" name="budget">
+              <option>Not specified</option>
+              <option>Under ₹3,000</option>
+              <option>₹3,000–₹8,000</option>
+              <option>₹8,000–₹15,000</option>
+              <option>₹15,000+</option>
+              <option>Please suggest a package</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="contact-method">Preferred reply</label>
+            <select id="contact-method" name="reply">
+              <option>WhatsApp</option>
+              <option>Phone call</option>
+              <option>Email</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="notes">Any extra details? (optional)</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Outfit colours, skin/makeup preferences, venue details, questions..."></textarea>
+          </div>
+        </div>
+
+        <button class="button button-dark submit-button" type="submit">
+          Send booking enquiry <span>↗</span>
+        </button>
+
+        <p class="form-status" id="form-status" aria-live="polite">
+          WhatsApp will open with your details. Please review and tap Send in WhatsApp to deliver the enquiry.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="index.html">
+      <span class="logo-symbol">L<span>✳</span></span>
+      <span class="logo-type">LUXE <small>BEAUTY STUDIO</small></span>
+    </a>
+
+    <p>Beauty, on your terms.</p>
+
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+    </div>
+
+    <small>© <span class="year"></span> Luxe Beauty Studio. Demo concept website.</small>
+  </footer>
+</body>
+</html>
